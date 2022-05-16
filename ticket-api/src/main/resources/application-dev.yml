@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orcl
+    username: LearnDatabase
+    password: 'Tung9559gnuT'
+    driverClassName: oracle.jdbc.OracleDriver
+    timeBetweenEvictionRunsMillis: 1000
+    testWhileIdle: true
+    validationQuery: SELECT * FROM DUAL
+  main:
+    allow-circular-references: true
